@@ -4,25 +4,31 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/sorpar0717/source/repos/labrynt.SP/Content/labarint.png</File>
-    <File>C:/Users/sorpar0717/source/repos/labrynt.SP/Content/labarint1.png</File>
-    <File>C:/Users/sorpar0717/source/repos/labrynt.SP/Content/Line1.png</File>
-    <File>C:/Users/sorpar0717/source/repos/labrynt.SP/Content/Line11.png</File>
-    <File>C:/Users/sorpar0717/source/repos/labrynt.SP/Content/Line111.png</File>
-    <File>C:/Users/sorpar0717/source/repos/labrynt.SP/Content/Line1111.png</File>
-    <File>C:/Users/sorpar0717/source/repos/labrynt.SP/Content/Line2.png</File>
-    <File>C:/Users/sorpar0717/source/repos/labrynt.SP/Content/Line22.png</File>
-    <File>C:/Users/sorpar0717/source/repos/labrynt.SP/Content/Line222.png</File>
-    <File>C:/Users/sorpar0717/source/repos/labrynt.SP/Content/Line2222.png</File>
-    <File>C:/Users/sorpar0717/source/repos/labrynt.SP/Content/Linehori.png</File>
-    <File>C:/Users/sorpar0717/source/repos/labrynt.SP/Content/Linevert.png</File>
-    <File>C:/Users/sorpar0717/source/repos/labrynt.SP/Content/pngegg.png</File>
-    <File>C:/Users/sorpar0717/source/repos/labrynt.SP/Content/pngwing.com.png</File>
-    <File>C:/Users/sorpar0717/source/repos/labrynt.SP/Content/whitebrick.jpg</File>
+    <File>C:/gitmapp/Labrynt-game-SP/Content/1258544.jpg</File>
+    <File>C:/gitmapp/Labrynt-game-SP/Content/arial.spritefont</File>
+    <File>C:/gitmapp/Labrynt-game-SP/Content/labarint.png</File>
+    <File>C:/gitmapp/Labrynt-game-SP/Content/labarint1.png</File>
+    <File>C:/gitmapp/Labrynt-game-SP/Content/Line1.png</File>
+    <File>C:/gitmapp/Labrynt-game-SP/Content/Line11.png</File>
+    <File>C:/gitmapp/Labrynt-game-SP/Content/Line111.png</File>
+    <File>C:/gitmapp/Labrynt-game-SP/Content/Line1111.png</File>
+    <File>C:/gitmapp/Labrynt-game-SP/Content/Line2.png</File>
+    <File>C:/gitmapp/Labrynt-game-SP/Content/Line22.png</File>
+    <File>C:/gitmapp/Labrynt-game-SP/Content/Line222.png</File>
+    <File>C:/gitmapp/Labrynt-game-SP/Content/Line2222.png</File>
+    <File>C:/gitmapp/Labrynt-game-SP/Content/Linehori.png</File>
+    <File>C:/gitmapp/Labrynt-game-SP/Content/Linevert.png</File>
+    <File>C:/gitmapp/Labrynt-game-SP/Content/pngegg.png</File>
+    <File>C:/gitmapp/Labrynt-game-SP/Content/pngwing.com (1).png</File>
+    <File>C:/gitmapp/Labrynt-game-SP/Content/pngwing.com.png</File>
+    <File>C:/gitmapp/Labrynt-game-SP/Content/whitebrick.jpg</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File>labarinteee1.png</File>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

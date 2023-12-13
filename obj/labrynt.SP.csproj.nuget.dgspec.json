@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sorpar0717\\source\\repos\\labrynt.SP\\labrynt.SP.csproj": {}
+    "C:\\gitmapp\\Labrynt-game-SP\\labrynt.SP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sorpar0717\\source\\repos\\labrynt.SP\\labrynt.SP.csproj": {
+    "C:\\gitmapp\\Labrynt-game-SP\\labrynt.SP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sorpar0717\\source\\repos\\labrynt.SP\\labrynt.SP.csproj",
+        "projectUniqueName": "C:\\gitmapp\\Labrynt-game-SP\\labrynt.SP.csproj",
         "projectName": "labrynt.SP",
-        "projectPath": "C:\\Users\\sorpar0717\\source\\repos\\labrynt.SP\\labrynt.SP.csproj",
+        "projectPath": "C:\\gitmapp\\Labrynt-game-SP\\labrynt.SP.csproj",
         "packagesPath": "C:\\Users\\sorpar0717\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sorpar0717\\source\\repos\\labrynt.SP\\obj\\",
+        "outputPath": "C:\\gitmapp\\Labrynt-game-SP\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sorpar0717\\AppData\\Roaming\\NuGet\\NuGet.Config",

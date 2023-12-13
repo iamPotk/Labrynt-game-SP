@@ -8,6 +8,7 @@ namespace labrynt.SP
     {
         private GraphicsDeviceManager _graphics;
         private SpriteBatch spriteBatch;
+        public bool harvunnit;
 
 
 
@@ -25,14 +26,21 @@ namespace labrynt.SP
         Rectangle labryntrect = new Rectangle(100, 0, 700, 480);
 
 
-        /*
-
-        Texture2D Wall1;
-        Rectangle wall1rect = new Rectangle(50, 50, 300, 10);
+        Texture2D gameover;
+        Rectangle gameovervict = new Rectangle(0, 0, 1000, 500);
 
 
 
+        Texture2D apple;
+        Rectangle applerect = new Rectangle(700,430 , 30, 30);
 
+
+        /* Texture2D Wall1;
+        Rectangle wall1rect = new Rectangle(0, 0, 50, 50);
+
+
+
+       
         Texture2D Wall2;
         Rectangle wall2rect = new Rectangle(350, 50, 10, 150);
 
@@ -88,7 +96,7 @@ namespace labrynt.SP
 
         Texture2D snail;
         Vector2 snailbg = new Vector2(0, 0);
-        Rectangle snailrect = new Rectangle(0, 0, 50, 50);
+        Rectangle snailrect = new Rectangle(0, 0, 40, 40);
 
 
         KeyboardState kibord = Keyboard.GetState();
@@ -98,12 +106,12 @@ namespace labrynt.SP
         {
             if (A.Intersects(B))
             {
-                return true;
+                return harvunnit = true;
             }
 
             else
             {
-                return false;
+                return harvunnit = false;
             }
         }
 
@@ -129,17 +137,21 @@ namespace labrynt.SP
             labryntpng = Content.Load<Texture2D>("labarint1");
             brickbg = Content.Load<Texture2D>("whitebrick");
             snail = Content.Load<Texture2D>("pngwing.com");
-           /* Wall1 = Content.Load<Texture2D>("Linehori");
-            Wall2 = Content.Load<Texture2D>("line1");
-            Wall3 = Content.Load<Texture2D>("Line11");
-            Wall4 = Content.Load<Texture2D>("Line111");
-            Wall5 = Content.Load<Texture2D>("Line1111");
-            Wall6 = Content.Load<Texture2D>("Linevert");
-            Wall7 = Content.Load<Texture2D>("Line2");
-            Wall8 = Content.Load<Texture2D>("Line22");
-            Wall9 = Content.Load<Texture2D>("Line222");
-            Wall10 = Content.Load<Texture2D>("Line2222");
-            */
+            apple = Content.Load<Texture2D>("pngwing.com (1)");
+            gameover = Content.Load<Texture2D>("1258544");
+
+
+            /* Wall1 = Content.Load<Texture2D>("Linehori");
+             Wall2 = Content.Load<Texture2D>("line1");
+             Wall3 = Content.Load<Texture2D>("Line11");
+             Wall4 = Content.Load<Texture2D>("Line111");
+             Wall5 = Content.Load<Texture2D>("Line1111");
+             Wall6 = Content.Load<Texture2D>("Linevert");
+             Wall7 = Content.Load<Texture2D>("Line2");
+             Wall8 = Content.Load<Texture2D>("Line22");
+             Wall9 = Content.Load<Texture2D>("Line222");
+             Wall10 = Content.Load<Texture2D>("Line2222");
+             */
 
 
 
@@ -155,52 +167,52 @@ namespace labrynt.SP
 
             if (kibord.IsKeyDown(Keys.A))
             {
-                snailrect.X -= 1;
+                snailrect.X -= 3;
 
             }
             else if (kibord.IsKeyDown(Keys.D))
             {
 
-                snailrect.X += 1;
+                snailrect.X += 3;
 
             }
             else if (kibord.IsKeyDown(Keys.W))
             {
 
-                snailrect.Y -= 1;
+                snailrect.Y -= 3;
 
             }
 
             else if (kibord.IsKeyDown(Keys.S))
             {
 
-                snailrect.Y += 1;
+                snailrect.Y += 3;
 
             }
 
 
             if (kibord.IsKeyDown(Keys.Back))
             {
-                snailrect.X -= 1;
+                snailrect.X -= 3;
 
             }
             else if (kibord.IsKeyDown(Keys.Down))
             {
 
-                snailrect.X += 1;
+                snailrect.X += 3;
 
             }
             else if (kibord.IsKeyDown(Keys.H))
             {
 
-                snailrect.Y -= 1;
+                snailrect.Y -= 3;
 
             }
 
             else if (kibord.IsKeyDown(Keys.F))
             {
 
-                snailrect.Y += 1;
+                snailrect.Y += 3;
 
             }
 
@@ -210,7 +222,7 @@ namespace labrynt.SP
 
 
 
-            if (intersection(snailrect , labryntrect))
+            if (intersection(snailrect , applerect))
             {
                 dead = true;
             }
@@ -238,43 +250,34 @@ namespace labrynt.SP
             {
                 spriteBatch.Draw(labryntpng, labryntrect, color: Color.White);
             }
-            spriteBatch.Draw(labryntpng,labryntrect,color:Color.Red);
+            spriteBatch.Draw(labryntpng,labryntrect,color:Color.Orange);
 
-
-
-            /*
-            spriteBatch.Draw(Wall1, wall1rect, color: Color.White);
-
-
-            spriteBatch.Draw(Wall1, wall1rect, color: Color.White);
-            spriteBatch.Draw(Wall2, wall1rect, color: Color.White);
-            spriteBatch.Draw(Wall3, wall1rect, color: Color.White);
-            spriteBatch.Draw(Wall4, wall1rect, color: Color.White);
-            spriteBatch.Draw(Wall5, wall1rect, color: Color.White);
-            spriteBatch.Draw(Wall6, wall1rect, color: Color.White);
-            spriteBatch.Draw(Wall7, wall1rect, color: Color.White);
-            spriteBatch.Draw(Wall8, wall1rect, color: Color.White);
-            spriteBatch.Draw(Wall9, wall1rect, color: Color.White);
-            spriteBatch.Draw(Wall10, wall1rect, color: Color.White);
-
-            */
+            spriteBatch.Draw(apple, applerect, color: Color.White);
 
 
 
 
 
+            /*spriteBatch.Draw(Wall1, wall1rect, color: Color.White);
 
+          
+           spriteBatch.Draw(Wall1, wall1rect, color: Color.White);
+           spriteBatch.Draw(Wall2, wall1rect, color: Color.White);
+           spriteBatch.Draw(Wall3, wall1rect, color: Color.White);
+           spriteBatch.Draw(Wall4, wall1rect, color: Color.White);
+           spriteBatch.Draw(Wall5, wall1rect, color: Color.White);
+           spriteBatch.Draw(Wall6, wall1rect, color: Color.White);
+           spriteBatch.Draw(Wall7, wall1rect, color: Color.White);
+           spriteBatch.Draw(Wall8, wall1rect, color: Color.White);
+           spriteBatch.Draw(Wall9, wall1rect, color: Color.White);
+           spriteBatch.Draw(Wall10, wall1rect, color: Color.White);
 
-
-
-
-
-
-
-
+           */
             spriteBatch.Draw(snail, snailrect, color:Color.White);
-
-
+            if (harvunnit)
+            {
+                spriteBatch.Draw(gameover, gameovervict, Color.White);
+            }
 
             spriteBatch.End();
             base.Draw(gameTime);
